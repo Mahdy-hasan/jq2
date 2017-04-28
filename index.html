@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!--
+Author:Mahdy Hasan
+Email:mahdybd53@gmail.com
+Date:01-04-2017
+-->
+<html lang="en">
+<head>
+    <title>jq2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+
+</head>
+<body>
+    <!-- navbar start -->
+    <div class="navbar btn-default navbar-fixed-top">
+     <div class="container">
+        <div class="row">
+            <div class="navber-header">
+                <div class="navbar-brand">
+                    JQUERY
+                </div>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                <li><a>SIGN IN</a></li>
+                <li><a>REGISTER</a></li>
+                <li><a>CONTACT</a></li>
+                </ul>
+            </div>
+            <!--
+            <div class="col-sm-3 col-sm-offset-4 col-xs-6">
+                <input class="btn" type="text">
+                <button class="btn">search</button>
+            </div>-->
+        </div>
+     </div>
+    </div><br><br><br>
+    
+    <!--Datepicker-->   
+ <div class="col-sm-6 col-xs-12">
+        <p>Date: <input type="text" id="datepicker" size="30"></p>
+ 
+<p>Animations:<br>
+  <select id="anim">
+    <option value="show">Show (default)</option>
+    <option value="slideDown">Slide down</option>
+    <option value="fadeIn">Fade in</option>
+    <option value="blind">Blind (UI Effect)</option>
+    <option value="bounce">Bounce (UI Effect)</option>
+    <option value="clip">Clip (UI Effect)</option>
+    <option value="drop">Drop (UI Effect)</option>
+    <option value="fold">Fold (UI Effect)</option>
+    <option value="slide">Slide (UI Effect)</option>
+    <option value="">None</option>
+  </select>
+</p>
+ 
+  </div>
+        
+    <!--Accordion-->
+  <div class="container">
+    <div class="row">
+    <div class="col-sm-6 col-xs-12 pull-right" id="accordion">
+     <h3>Accordion</h3>
+  <div>
+    <p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+  </div>
+  <h3>Section 2</h3>
+  <div>
+    <p>
+    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+    suscipit faucibus urna.
+    </p>
+  </div>
+  <h3>Section 3</h3>
+  <div>
+    <p>
+    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+    </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+  <h3>Section 4</h3>
+  <div>
+    <p>
+    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+    mauris vel est.
+    </p>
+    <p>
+    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+    inceptos himenaeos.
+    </p>
+  </div>
+</div>
+</div>
+</div><br>
+    
+<!-- Online exam-->
+    <div class="jumbotron col-sm-8 col-sm-offset-2 col-xs-12">
+         <div class="text-center">
+             <h1>Online exam</h1>
+             <hr>
+         </div>
+         <div class="form-group">
+           <h2>1.Which is the electronics related subject?</h2>
+              <input type="radio" id="sub1" name="q1" value="EEE"> EEE   
+              <input type="radio" id="sub1" name="q1" value="CSE"> CSE 
+              <input type="radio" id="sub1" name="q1" value="IT"> IT
+               
+             <h2>2.Total credits of this subject(UIU)?</h2>
+              <input type="radio" id="cdit" name="q2" value="143"> 143
+             <input type="radio" id="cdit" name="q2" value="150"> 150
+             <input type="radio" id="cdit" name="q2" value="160"> 160
+             
+             <h2>3.Which are the programming languages of wab design?</h2>
+              <input type="checkbox" id="tpic" name="q3" value="Html"> Html
+             <input type="checkbox" id="tpic" name="q3" value="C++"> C++
+             <input type="checkbox" id="tpic" name="q3" value="Java"> Java
+             <input type="checkbox" id="tpic" name="q3" value="Javascript"> Javascript
+             <br><br>
+             <button type="button" class="btn btn-danger btn-bg">Submit</button>
+             <hr>
+             <ul class="list-inline" style="display:none">
+                 <li>Right answer:</li>
+                 <li>1. EEE</li>
+                 <li>2. 143</li>
+                 <li>3. Html & Javascript</li>
+             </ul>
+             <span></span>
+            
+         </div> 
+    </div>
+    
+    <!--Aplication program interface (Api)-->
+    <div class="container">
+     <div class="row"> 
+         <div class="col-sm-6 col-sm-offset-3 col xs-12 text-success text-center">
+             <hr>
+             <h1>Api related</h1>
+             <hr>
+         </div>
+       <div class="text-primary col-sm-4 col-xs-12">
+           <h1 class="name">Hasan Mahdy</h1>
+           <h1 class="mail" >Hasan@gmail.com</h1>
+           <h1 class="phone">017162645452</h1>
+           <h2 class="content">Graiously provide CDN support for Bootstrap's ,CSS and JavaScript.</h2>
+           
+       </div>   
+         <div class="col-sm-2 col-xs-12">
+             <br><br>
+            <button type="button" class="name btn btn-danger btn-block" name="name">Name</button><br>
+            <button type="button" class="mail btn btn-danger btn-block" name="mail">Mail</button><br>
+            <button type="button" class="phone btn btn-danger btn-block" name="phone">Phone</button><br>
+            <button type="button" class="content btn btn-danger btn-block" name="content">Content</button><br>
+         </div>
+         <div class="col-sm-6 col-xs-12"> 
+             <br><br>
+         <form>
+          <div class="form-group" >
+             <input type="text" id="nam" class="form-control" name="hasan" placeholder="name"> <br> 
+              <input type="text" id="mai" class="form-control" name="mail" placeholder="mail"> <br>
+              <input type="text" id="phon" class="form-control" name="phone" placeholder="phone"> <br>
+              <input type="text" id="conten" class="form-control" name="content" placeholder="content"><br> 
+          </div>
+         </form>
+         </div>
+     </div>
+    </div>
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    
+<script>
+ /*!datepicker*/        
+  $( function() {
+    $( "#datepicker" ).datepicker();
+    $( "#anim" ).on( "change", function() {
+      $( "#datepicker" ).datepicker( "option", "showAnim", $( this ).val() );
+    });
+  } );
+
+    /*!Accordion*/
+      $( function() {
+    $("#accordion").accordion();
+  } );
+  
+    
+    /*!Online exam*/
+    $(function(){
+        $("button").click(function(){
+            if(!$("input[name=q1]:checked").val()
+              || !$("input[name=q2]:checked").val()
+              || !$("input[name=q3]:checked").val())
+            {
+               $("span").text("Please click all answer... !")
+
+               } else{
+                 var q1=$("input[name=q1]:checked").val();
+                 var q2=$("input[name=q2]:checked").val()
+                 var q3=[];
+                 $.each($("input[name=q3]:checked"),function(){
+                     q3.push($("this").val())
+                 })
+                var q1=$("input[name=q1]:checked").val();
+                   var q2=$("input[name=q2]:checked").val();
+                   var q3=[];
+                   $.each($("input[name=q3]:checked"),function(){
+                       q3.push($(this).val())
+                   })
+                   var ans = "Your answer are:" + "<br> 1."+ q1 + "<br> 2." + q2 + "<br> 3."+ q3;
+                   $("span").html(ans);
+                   $(".list-inline").fadeIn(2000);
+            }
+        })
+    })
+    
+    /*!Api type */
+    $(function(){
+        var nm=$("h1.name").text();
+        var ml=$("h1.mail").text();
+        var ph=$("h1.phone").text();
+        var ct=$("h2.content").text();
+        
+        $("button.name").click(function(){
+            $("#nam").val(nm);
+        })
+         $("button.mail").click(function(){
+            $("#mai").val(ml);
+        })
+         $("button.phone").click(function(){
+            $("#phon").val(ph);
+        })
+         $("button.content").click(function(){
+            $("#conten").val(ct);
+        })
+        
+    })  
+    
+</script>
+       
+</body>      
+</html>
